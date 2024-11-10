@@ -1,0 +1,73 @@
+/* General Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root Variables */
+:root {
+  --primary-color: #333333;
+  --background-color: #f4f6f9;
+  --accent-color: #3A86FF;
+  --button-color: #FF6B6B;
+  --text-color: #333333;
+  --font-main: 'Helvetica', sans-serif;
+}
+
+/* Body Styles */
+body {
+  font-family: var(--font-main);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Button Style */
+button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: var(--button-color);
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #FF4C4C;
+}
+
+/* Hero Image Background */
+.home-image {
+  background-image: url('../src/assets/hero.webp');
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Project Card Style */
+.project-card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+}
